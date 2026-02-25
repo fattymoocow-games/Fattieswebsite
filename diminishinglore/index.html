@@ -53,6 +53,41 @@ body {
     margin: 120px auto;
     padding: 0 20px;
 }
+
+/* Faction Table */
+.faction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.faction-table th,
+.faction-table td {
+    padding: 14px;
+    text-align: left;
+}
+
+.faction-table th {
+    border-bottom: 2px solid #333;
+    font-size: 18px;
+}
+
+.faction-table tr {
+    border-bottom: 1px solid #222;
+    transition: 0.2s;
+}
+
+.faction-table tr:hover {
+    background-color: #1b1b1b;
+    cursor: pointer;
+}
+
+.faction-table a {
+    color: #7fd7ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+    
 </style>
 </head>
 <body>
@@ -75,9 +110,32 @@ body {
         and projects together.
     </p>
 
-    <p>
-        Over time, this will become a living archive of characters, magic systems, and forgotten ages.
-    </p>
+    <h2>Factions & Races</h2>
+
+    <table class="faction-table">
+        <thead>
+            <tr>
+                <th>Faction</th>
+                <th>Overview</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr onclick="window.location='shaladar/';">
+                <td><a href="shaladar/">Kingdom of Shaladar</a></td>
+                <td>A proud kingdom known for discipline, structure, and enduring strength.</td>
+            </tr>
+    
+            <tr onclick="window.location='taranar/';">
+                <td><a href="taranar/">Kingdom of Taranar</a></td>
+                <td>A realm shaped by ambition, conflict, and expansionist ideals.</td>
+            </tr>
+    
+            <tr onclick="window.location='antora/';">
+                <td><a href="antora/">Antora</a></td>
+                <td>An ancient and mysterious faction whose origins predate recorded history.</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 </body>
